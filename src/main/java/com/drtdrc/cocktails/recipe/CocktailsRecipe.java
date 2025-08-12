@@ -95,28 +95,6 @@ public class CocktailsRecipe extends SpecialCraftingRecipe {
         return potionOutput;
     }
 
-    private static void chooseStatusEffect(Map<StatusEffect, StatusEffectInstance> chosen, StatusEffectInstance incoming) {
-        StatusEffect key = incoming.getEffectType().value();
-        StatusEffectInstance current = chosen.get(key);
-
-        if (current == null
-                || incoming.getAmplifier() > current.getAmplifier()
-                || (incoming.getAmplifier() == current.getAmplifier()
-                    && incoming.getDuration() > current.getDuration()
-            )
-        ) {
-            chosen.put(key, new StatusEffectInstance(
-                incoming.getEffectType(),
-                incoming.getDuration(),
-                incoming.getAmplifier(),
-                incoming.isAmbient(),
-                incoming.shouldShowParticles(),
-                incoming.shouldShowIcon()
-            ));
-        }
-
-    }
-
     private static int blendColorFromEffects(Collection<StatusEffectInstance> effects) {
         if (effects.isEmpty()) return 0;
 
