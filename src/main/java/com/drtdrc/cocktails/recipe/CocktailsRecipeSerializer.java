@@ -1,7 +1,5 @@
 package com.drtdrc.cocktails.recipe;
 
-import com.drtdrc.cocktails.Cocktails;
-import com.nimbusds.oauth2.sdk.id.Identifier;
 import net.minecraft.recipe.SpecialCraftingRecipe;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
