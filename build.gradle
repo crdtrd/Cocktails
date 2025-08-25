@@ -16,7 +16,6 @@ loom {
     mods {
         "cocktails" {
             sourceSet sourceSets.main
-            sourceSet sourceSets.client
         }
     }
 }
