@@ -6,18 +6,13 @@
   "description": "",
   "authors": [],
   "contact": {},
-  "license": "All-Rights-Reserved",
+  "license": "MIT",
   "environment": "*",
   "entrypoints": {
-    "client": [
-    ],
     "main": [
       "com.drtdrc.cocktails.Cocktails"
     ]
   },
-  "mixins": [
-    "cocktails.mixins.json"
-  ],
   "depends": {
     "fabricloader": ">=${loader_version}",
     "fabric": "*",
