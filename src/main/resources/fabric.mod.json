@@ -3,9 +3,12 @@
   "id": "cocktails",
   "version": "${version}",
   "name": "Cocktails",
-  "description": "",
-  "authors": [],
-  "contact": {},
+  "icon": "assets/cocktails/icon.png",
+  "description": "Allows you to combine potions in a crafting table to create a potion cocktail!",
+  "authors": ["crdtrd"],
+  "contact": {
+    "issues": "https://github.com/crdtrd/cocktails/issues"
+  },
   "license": "MIT",
   "environment": "*",
   "entrypoints": {
